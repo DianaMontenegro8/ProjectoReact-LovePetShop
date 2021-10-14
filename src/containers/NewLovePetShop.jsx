@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react'
 
 const NewLovePetShop = () => {
+    
+
     return (
         <div>
             <h1>Novo Cliente</h1>
