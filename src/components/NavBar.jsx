@@ -7,7 +7,7 @@ const NavBar = () => {
             <Container fluid>
             <Link to="/" className ="navbar-brand">Love PetShop</Link>
             <Nav className="me-auto">
-        <Link to="/new" className="nav-link">Home</Link>
+        <Link to="/new" className="nav-link">Cadastro</Link>
             </Nav>
             </Container>
         </Navbar>

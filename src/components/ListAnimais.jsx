@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import CardAnimais from './CardAnimais'
+import CardAnimais from './CardAnimais';
+import { Container , Row } from 'react-bootstrap';
 
 
 const ListAnimais = () => {
@@ -23,15 +24,18 @@ const ListAnimais = () => {
     }, [])
 
     return (
-        <div>
+        <Container className="mb-5">
+            <Row>
             {
-                list.map((clientes) => (
+                list.map((clientes, index) => (
                 <CardAnimais 
+                 key= {index}
                    clientes={clientes}
                 />
                 ))
             }
-        </div>
+            </Row>
+        </Container>
     )
 }
 
