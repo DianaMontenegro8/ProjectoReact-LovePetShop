@@ -1,12 +1,33 @@
+import axios from 'axios';
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import Swal from 'sweetalert2';
 import './style/style.css'
 
 const CardAnimais = ({ clientes }) => {
+
+    const URL = "http://localhost:3020/clientes"
+
+    const handleDelete = async () => {
+       const response = await axios.delete(`${URL}/${clientes.id}`);
+       if (response.status === 200){
+           Swal.fire(
+               'Apagado',
+               'Voce Apago con Exito o registro',
+               'success'
+               )
+       }else {
+           Swal.fire (
+               'Erro',
+               "Aconteceo un Problema ao Apagar o registro",
+               'erro'
+           )
+       }
+    }
+
     return (
         <div className="col-3 mb-3">
             <Card>
-
             <Card.Title className="text-center" >{clientes.pet}</Card.Title>
                 <img src={clientes.imagem} alt={clientes.raca} className="card-img-top imagen-card" />
                 <Card.Body>
@@ -20,7 +41,7 @@ const CardAnimais = ({ clientes }) => {
 
                     </ListGroup>
 
-                    <button className="btn btn-primary  me-2">Editar</button>
+                    <button className="btn btn-primary  me-2" onClick={handleDelete}>Editar</button>
                     <button className="btn btn-danger me-2">Eliminar</button>
                 </Card.Body>
 
