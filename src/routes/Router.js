@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import App from '../containers/App'
-import NewLovePetShop from '../containers/NewLovePetShop'
+import NewAnimais from '../containers/NewAnimais'
 
 const Router = () => {
     return (
@@ -14,7 +14,7 @@ const Router = () => {
         <NavBar />
             <Switch>
                 <Route exact path="/" component={App} />
-                 <Route exact path="/new" component={NewLovePetShop} />
+                 <Route exact path="/new" component={NewAnimais} />
             </Switch>
 
         </BrowserRouter>
