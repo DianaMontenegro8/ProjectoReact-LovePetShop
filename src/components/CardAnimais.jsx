@@ -4,7 +4,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import './style/style.css'
 
-const CardAnimais = ({clientes, setUpdateList , updateList , handleCloseModal , handleOpenModal , setDataModal}) => {
+const CardAnimais = ({clientes, setUpdateList , updateList , handleOpenModal , setDataModal}) => {
 
     const URL = "http://localhost:3020/clientes"
 
@@ -48,13 +48,13 @@ const handleEdit = () => {
 }
        
     return (
-        <div className="col-3 mb-3">
+        <div className="col-4 mb-1">
             <Card>
-            <Card.Title className="text-center" >{clientes.pet}</Card.Title>
+            <Card.Title className="pet" >{clientes.pet}</Card.Title>
                 <img src={clientes.imagem} alt={clientes.raca} className="card-img-top imagen-card" />
                 <Card.Body>
 
-                    <ListGroup className="mb-3">
+                    <ListGroup className="mb-1">
                         <ListGroupItem><strong>Nome : </strong>{clientes.nome}</ListGroupItem>
                         <ListGroupItem><strong>Raça : </strong>{clientes.raca}</ListGroupItem>
                         <ListGroupItem><strong>Idade : </strong>{clientes.idade}</ListGroupItem>
@@ -63,8 +63,8 @@ const handleEdit = () => {
 
                     </ListGroup>
 
-                    <button className="btn btn-primary  me-2" onClick={handleEdit}>Editar</button>
-                    <button className="btn btn-danger me-2" onClick={handleDelete}>Eliminar</button>
+                    <button className="btn btn-primary  me-1" onClick={handleEdit}>Editar</button>
+                    <button className="btn btn-danger me-1" onClick={handleDelete}>Eliminar</button>
                 </Card.Body>
 
             </Card>

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Container, Form } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
+import pet2 from '../imagem/img/pet2.jfif'
 
 const NewAnimais = () => {
 
@@ -16,7 +17,7 @@ const NewAnimais = () => {
             [target.name]: target.value
 
         })
-    }
+    }  
 
     const URL = "http://localhost:3020/clientes"
 
@@ -29,7 +30,7 @@ const NewAnimais = () => {
                 'Seu registro foi salvo com sucesso',
                 'success'
             )
-            history.push('/')
+            history.push('/inicio')
         } else {
             Swal.fire(
                 'Erro',
@@ -42,13 +43,17 @@ const NewAnimais = () => {
 
 
     return (
-        <Container>
+        <Container className="text-center">
+           
             <h1 className="text-center">Novo Cliente</h1>
             <Form
                 onSubmit={handleSubmit}
+                
             >
+                <img src={pet2} alt= "Gatos e Cachorros" className="GatoSerfil"/>
+                <hr/>
             
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-3 ">
                     <Form.Control
                         type="text"
                         name="nome"

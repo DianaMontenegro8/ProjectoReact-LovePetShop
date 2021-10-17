@@ -10,6 +10,7 @@ import App from '../containers/App'
 import NossosServiços from '../containers/NossosServiços'
 import QuemSomos from '../containers/QuemSomos'
 import NewAnimais from '../containers/NewAnimais'
+import Clientes from "../containers/Clientes";
 
 const Router = () => {
     return (
@@ -20,6 +21,7 @@ const Router = () => {
                  <Route exact path="/Quem Somos" component={QuemSomos} />
                  <Route exact path="/Nossos Serviços" component={NossosServiços} />
                  <Route exact path="/Registro" component={NewAnimais} />
+                 <Route exact path="/Clientes" component={Clientes} />
             </Switch>
 
         </BrowserRouter>
