@@ -1,14 +1,21 @@
 import React from "react";
-import { Container , Nav , Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container fluid>
-            <Link to="/" className ="navbar-brand">Love PetShop</Link>
-            <Nav className="me-auto">
-        <Link to="/new" className="nav-link">Cadastro</Link>
-            </Nav>
+                <Link to="/Inicio" className="navbar-brand">Love PetShop</Link>
+                <Nav className="me-auto">
+                <Link to="/Quem Somos" className="nav-link">Quem Somos</Link>
+                <Link to="/Nossos Serviços" className="nav-link">Nossos Serviços</Link>
+                <Link to="/Registro" className="nav-link">Registro</Link>
+                    
+                </Nav>
+
+                <Nav className="me-auto">
+                
+                </Nav>
             </Container>
         </Navbar>
     )

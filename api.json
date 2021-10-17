@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "nome": "Manchas",
+      "nome": "Manchas daniel",
       "pet": " Cachorro ",
       "raca": "Jack Rusell terrier",
       "idade": "6 anos",
@@ -32,73 +32,13 @@
     },
     {
       "id": 4,
-      "nome": "Magnesia",
+      "nome": "Magnesia bebe",
       "pet": "Gato",
       "raca": "angora",
       "idade": "2 anos",
       "propietario": "Diana Montenegro",
       "telefone": "11 984227913",
       "imagem": "https://static1.patasdacasa.com.br/articles/1/14/61/@/6738-gato-angora-um-bichano-elegante-brinca-articles_media_mobile-2.jpg"
-    },
-    {
-      "nome": "Diana Carolina Montenegro Ascanio",
-      "pet": "Gato",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "347648697",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 5
-    },
-    {
-      "nome": "Diana Carolina Montenegro Ascanio",
-      "pet": "",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "5555",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 6
-    },
-    {
-      "nome": "Diana Carolina Montenegro Ascanio",
-      "pet": "Gato",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "975874486",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 7
-    },
-    {
-      "nome": "Diana Carolina Montenegro Ascanio",
-      "pet": "Gato",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "759597",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 8
-    },
-    {
-      "nome": "Diana Carolina Montenegro Ascanio",
-      "pet": "Gato",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "432413254135413",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 9
-    },
-    {
-      "nome": "SARIBEL CRISTINA VELA CASAMAYOR",
-      "pet": "Cachorro",
-      "raca": "pitbull",
-      "idade": "3 anos",
-      "propietario": "jose miguel",
-      "telefone": "423231413413",
-      "imagem": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
-      "id": 10
     }
   ]
 }

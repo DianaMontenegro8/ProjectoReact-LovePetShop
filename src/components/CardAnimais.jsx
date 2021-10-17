@@ -4,27 +4,49 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import './style/style.css'
 
-const CardAnimais = ({ clientes }) => {
+const CardAnimais = ({clientes, setUpdateList , updateList , handleCloseModal , handleOpenModal , setDataModal}) => {
 
     const URL = "http://localhost:3020/clientes"
 
     const handleDelete = async () => {
-       const response = await axios.delete(`${URL}/${clientes.id}`);
-       if (response.status === 200){
-           Swal.fire(
-               'Apagado',
-               'Voce Apago con Exito o registro',
-               'success'
-               )
-       }else {
-           Swal.fire (
-               'Erro',
-               "Aconteceo un Problema ao Apagar o registro",
-               'erro'
-           )
-       }
-    }
 
+        Swal.fire({
+        title: `Você tem certeza que quer deletar ${clientes.nome} ?`,
+        text:"Essa ação não pode ser desfeita!",
+        icon: 'warning' ,
+        showCancelButton: true,
+        confirmButtonColor:'#3085d6' ,
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Si , Apagalo!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                axios.delete(`${URL}/${clientes.id}`).then((response) => {
+                if (response.status === 200){
+                    Swal.fire(
+                       'Apagado',
+                       `Você a Apagado con Exito o registro ${clientes.nome}! `,
+                      'success'
+                       )
+                       setUpdateList (!updateList)
+                }else {
+                    Swal.fire (
+                        'Erro',
+                        "Aconteceo un Problema ao Apagar o registro",
+                        'erro'
+                    )
+                }
+         })
+     }
+  })
+}
+
+const handleEdit = () => {
+    handleOpenModal();
+    setDataModal(clientes)
+}
+       
     return (
         <div className="col-3 mb-3">
             <Card>
@@ -41,8 +63,8 @@ const CardAnimais = ({ clientes }) => {
 
                     </ListGroup>
 
-                    <button className="btn btn-primary  me-2" onClick={handleDelete}>Editar</button>
-                    <button className="btn btn-danger me-2">Eliminar</button>
+                    <button className="btn btn-primary  me-2" onClick={handleEdit}>Editar</button>
+                    <button className="btn btn-danger me-2" onClick={handleDelete}>Eliminar</button>
                 </Card.Body>
 
             </Card>
