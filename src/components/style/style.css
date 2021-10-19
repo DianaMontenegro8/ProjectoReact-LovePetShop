@@ -7,6 +7,7 @@ align-items: center;
 text-align: center;
 margin-top: auto;
 padding: auto;
+list-style: none;
 
 
 
@@ -23,8 +24,18 @@ background-color: #0ba21a;
     margin: 50px;
     background-color: rgb(129, 194, 129);
     border-radius: 15px;
+   
     
 }
+
+.NovoCliente {
+
+   text-align: center;
+  background-origin: padding-box;
+  margin-top: 50px;
+}
+
+
 
 .logo {
 
@@ -80,7 +91,7 @@ background-color: #0ba21a;
     padding: 30px;
      margin: 30px; 
      border: 2px solid #ef4404; 
-     float: left; 
+     float: right; 
      width: 100%;
      height: 100%; 
      max-width: 600px;

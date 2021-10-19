@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { Container, Form } from 'react-bootstrap';
+import { Container, Card , Form } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
 import pet2 from '../imagem/img/pet2.jfif'
@@ -43,9 +43,9 @@ const NewAnimais = () => {
 
 
     return (
-        <Container className="text-center">
+        <Container className="NovoCliente">
+           <Card >
            
-            <h1 className="text-center">Novo Cliente</h1>
             <Form
                 onSubmit={handleSubmit}
                 
@@ -53,7 +53,7 @@ const NewAnimais = () => {
                 <img src={pet2} alt= "Gatos e Cachorros" className="GatoSerfil"/>
                 <hr/>
             
-                <Form.Group className="mb-3 ">
+                <Form.Group className="mb-2 ">
                     <Form.Control
                         type="text"
                         name="nome"
@@ -65,7 +65,7 @@ const NewAnimais = () => {
                     />
                 </Form.Group>
 
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-2">
                     <select 
                     className="form.control"
                     name="pet"
@@ -142,6 +142,7 @@ const NewAnimais = () => {
                 </Form.Group>
                 <button className="btn btn-success">Guardar</button>
             </Form>
+            </Card>
         </Container>
     )
 }

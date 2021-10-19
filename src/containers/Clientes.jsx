@@ -15,30 +15,42 @@ const Clientes = () => {
 
     return (
         
-            <Container fluid>
+            <Container >
                 <div >
                 <Card>
                     <hr/>
                 <h1> Nossos Principais Clientes</h1>
                 <div className="  Clientes2 ">
                     <img className="card-img-top" src={Veterinaria} alt="Animal de Estimaçao"></img>
-
+                    <hr/>
+                    Veterinaria: Mariemy Ascanio
                 </div>
+
                 <div className="Clientes2">
                     <img className="card-img-top" src={cachorro1} alt="Animal de Estimaçao"></img>
+                    <hr/>
+                Princesa
                 </div>
-
+                
                 <div className="Clientes2">
                 <img className="card-img-top" src={gato1} alt="Animal de Estimaçao"></img>
-
+                <hr/>
+                Lili
                 </div>
 
                 <div className="Clientes2">
                 <img className="card-img" src={cachorro2} alt="Animal de Estimaçao"></img>
+                <hr/>
+                Fiera
                 </div>
+                
+
                 <div className="Clientes2">
                 <img className="card-img-top" src={cachorro3} alt="Animal de Estimaçao"></img>
+                <hr/>
+                Lupita
                 </div>
+                
 
                 <div className="Clientes2">
                 <img className="card-img-top" src={gato2} alt="Animal de Estimaçao"></img>
@@ -46,9 +58,15 @@ const Clientes = () => {
 
                 <div className="Clientes2">
                 <img className="card-img-top" src={cachorro4} alt="Animal de Estimaçao"></img>
+                <hr/>
+                Jasmin
                 </div>
+
+
                 <div className="Clientes2">
                 <img className="card-img-top" src={cachorro5} alt="Animal de Estimaçao"></img>
+                <hr/>
+                Diana
                 </div>
                 </Card>
             </div>
